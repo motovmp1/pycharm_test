@@ -11,7 +11,7 @@ Library          SeleniumLibrary
 
 
 ${URL}      https://demo.nopcommerce.com
-${browser}      headLessChrome
+${browser}      headLessFirefox
 
 
 #${URL}           https://demo.nopcommerce.com/
