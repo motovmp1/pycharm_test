@@ -11,7 +11,7 @@ Library          SeleniumLibrary
 
 
 ${URL}      https://demo.nopcommerce.com
-${browser}      Chrome
+${browser}      headLessChrome
 
 
 #${URL}           https://demo.nopcommerce.com/
@@ -35,7 +35,7 @@ openbrowserpathapplication
     open browser  ${URL}    ${browser}
     maximize browser window
     sleep  4
-    set selenium speed  1
+    set selenium speed  0.2
     ${page_title}       get title
     log                 ${page_title}
 
@@ -43,10 +43,10 @@ openbrowserpathapplication
 userandpasswordapplication
     click link                    xpath://a[@class='ico-login']
     input text                    id:Email                                         vinicius.mpinho@gmail.com
-    sleep                         3s
+    sleep                         1s
     input password                id:Password                                      Test@123
     click element                 xpath://input[@class='button-1 login-button']
-    sleep                         3s
+    sleep                         1s
     click link                    xpath://a[@class='ico-account']
-    sleep                         3s
+    sleep                         1s
     close browser
