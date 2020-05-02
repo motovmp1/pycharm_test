@@ -19,13 +19,24 @@ ${browser}      headLessChrome
 
 *** Test Cases ***
 
-LoginTest
+Open Page
 
     openbrowserpathapplication
     Go To                         ${url}
     sleep                         5s
+
+
+Insert name user
     userandpasswordapplication
 
+Insert the password page
+    insertpassworduser
+
+click button login page
+    clickbutttonloginpage
+
+close navigators
+    closing_navigator
 
 
 *** Keywords ***
@@ -44,9 +55,15 @@ userandpasswordapplication
     click link                    xpath://a[@class='ico-login']
     input text                    id:Email                                         vinicius.mpinho@gmail.com
     sleep                         1s
+
+insertpassworduser
     input password                id:Password                                      Test@123
     click element                 xpath://input[@class='button-1 login-button']
     sleep                         1s
+
+clickbutttonloginpage
     click link                    xpath://a[@class='ico-account']
     sleep                         1s
+
+closing_navigator
     close browser
