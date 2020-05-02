@@ -19,3 +19,5 @@ TESTE = 17
 teste = 19
 
 teste = 15
+
+teste = 17
