@@ -12,7 +12,7 @@ Library          SeleniumLibrary
 
 ${URL}      https://demo.nopcommerce.com
 ${browser}      headLessFirefox
-
+#${browser}      Firefox
 
 #${URL}           https://demo.nopcommerce.com/
 #${browser}       firefox
