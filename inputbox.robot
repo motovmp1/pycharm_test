@@ -67,5 +67,3 @@ clickbutttonloginpage
 
 closing_navigator
     close browser
-
-# teste para update git
