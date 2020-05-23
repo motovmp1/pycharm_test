@@ -57,12 +57,11 @@ userandpasswordapplication
     sleep                         1s
 
 insertpassworduser
-    input password                id:Password                                      123@mudar
+    input password                id:Password                                      123mudar
     click element                 xpath://input[@class='button-1 login-button']
     sleep                         1s
 
 clickbutttonloginpage
-    click link                    xpath://a[@class='ico-account']
     sleep                         1s
 
 closing_navigator
