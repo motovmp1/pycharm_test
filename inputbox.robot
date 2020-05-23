@@ -11,7 +11,7 @@ Library          SeleniumLibrary
 
 
 ${URL}      https://demo.nopcommerce.com
-${browser}      headLessFirefox
+${browser}      Firefox
 #${browser}      Firefox
 
 #${URL}           https://demo.nopcommerce.com/
@@ -57,7 +57,7 @@ userandpasswordapplication
     sleep                         1s
 
 insertpassworduser
-    input password                id:Password                                      Test@123
+    input password                id:Password                                      123@mudar
     click element                 xpath://input[@class='button-1 login-button']
     sleep                         1s
 
