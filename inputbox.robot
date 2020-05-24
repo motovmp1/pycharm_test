@@ -64,5 +64,6 @@ insertpassworduser
 clickbutttonloginpage
     sleep                         1s
 
+
 closing_navigator
     close browser
