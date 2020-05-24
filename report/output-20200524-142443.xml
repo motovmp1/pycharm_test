@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2 (Python 3.8.2 on win32)" generated="20200524 14:24:43.483" rpa="false">
+<suite id="s1" name="Inputbox" source="C:\Users\elsys\Documents\pycharm_test1\inputbox.robot">
+<test id="s1-t1" name="Open Page">
+<kw name="openbrowserpathapplication">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>"Running Test into Windows 10"</arg>
+</arguments>
+<status status="PASS" starttime="20200524 14:24:43.649" endtime="20200524 14:24:43.649"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200524 14:24:43.649" level="INFO">Opening browser 'Firefox' to base url 'https://demo.nopcommerce.com'.</msg>
+<msg timestamp="20200524 14:24:43.650" level="INFO">Firefox driver log is always forced to to: C:\Users\elsys\Documents\pycharm_test1\report\geckodriver-5.log</msg>
+<status status="PASS" starttime="20200524 14:24:43.649" endtime="20200524 14:24:53.321"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200524 14:24:53.321" endtime="20200524 14:24:53.324"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200524 14:24:57.325" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200524 14:24:53.324" endtime="20200524 14:24:57.325"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.2</arg>
+</arguments>
+<status status="PASS" starttime="20200524 14:24:57.325" endtime="20200524 14:24:57.325"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${page_title}</var>
+</assign>
+<msg timestamp="20200524 14:24:57.529" level="INFO">${page_title} = nopCommerce demo store</msg>
+<status status="PASS" starttime="20200524 14:24:57.325" endtime="20200524 14:24:57.529"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${page_title}</arg>
+</arguments>
+<msg timestamp="20200524 14:24:57.531" level="INFO">nopCommerce demo store</msg>
+<status status="PASS" starttime="20200524 14:24:57.530" endtime="20200524 14:24:57.531"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:24:43.648" endtime="20200524 14:24:57.531"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20200524 14:24:57.533" level="INFO">Opening url 'https://demo.nopcommerce.com'</msg>
+<status status="PASS" starttime="20200524 14:24:57.532" endtime="20200524 14:24:59.252"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200524 14:25:04.253" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200524 14:24:59.252" endtime="20200524 14:25:04.254"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:24:43.648" endtime="20200524 14:25:04.254" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Insert name user">
+<kw name="userandpasswordapplication">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@class='ico-login']</arg>
+</arguments>
+<msg timestamp="20200524 14:25:04.259" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" starttime="20200524 14:25:04.259" endtime="20200524 14:25:08.160"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:Email</arg>
+<arg>vinicius.mpinho@gmail.com</arg>
+</arguments>
+<msg timestamp="20200524 14:25:08.161" level="INFO">Typing text 'vinicius.mpinho@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20200524 14:25:08.160" endtime="20200524 14:25:08.823"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200524 14:25:09.823" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200524 14:25:08.823" endtime="20200524 14:25:09.824"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:25:04.257" endtime="20200524 14:25:09.824"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:25:04.256" endtime="20200524 14:25:09.825" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Insert the password page">
+<kw name="insertpassworduser">
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:Password</arg>
+<arg>123mudar</arg>
+</arguments>
+<msg timestamp="20200524 14:25:09.830" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20200524 14:25:10.252" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200524 14:25:10.492" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200524 14:25:09.829" endtime="20200524 14:25:10.492"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class='button-1 login-button']</arg>
+</arguments>
+<msg timestamp="20200524 14:25:10.492" level="INFO">Clicking element 'xpath://input[@class='button-1 login-button']'.</msg>
+<status status="PASS" starttime="20200524 14:25:10.492" endtime="20200524 14:25:11.774"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200524 14:25:12.777" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200524 14:25:11.775" endtime="20200524 14:25:12.777"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:25:09.828" endtime="20200524 14:25:12.778"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:25:09.826" endtime="20200524 14:25:12.778" critical="yes"></status>
+</test>
+<test id="s1-t4" name="click button login page">
+<kw name="clickbutttonloginpage">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200524 14:25:13.785" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200524 14:25:12.782" endtime="20200524 14:25:13.785"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:25:12.781" endtime="20200524 14:25:13.786"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:25:12.779" endtime="20200524 14:25:13.786" critical="yes"></status>
+</test>
+<test id="s1-t5" name="close navigators">
+<kw name="closing_navigator">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200524 14:25:13.791" endtime="20200524 14:25:14.725"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:25:13.789" endtime="20200524 14:25:14.726"></status>
+</kw>
+<status status="PASS" starttime="20200524 14:25:13.788" endtime="20200524 14:25:14.726" critical="yes"></status>
+</test>
+<doc>Input Boxes performance</doc>
+<status status="PASS" starttime="20200524 14:24:43.485" endtime="20200524 14:25:14.726"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="Inputbox">Inputbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
