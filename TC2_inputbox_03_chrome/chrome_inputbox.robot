@@ -11,7 +11,7 @@ Library          SeleniumLibrary
 
 
 ${URL}      https://demo.nopcommerce.com
-${browser}      Firefox
+${browser}      Chrome
 #${browser}      Firefox
 
 #${URL}           https://demo.nopcommerce.com/
@@ -42,8 +42,8 @@ close navigators
 *** Keywords ***
 
 openbrowserpathapplication
-    log to console      "Running Test into Windows 10 - Firefox"
-    log         Firefox Nav
+    log to console      "Running Test into Windows 10 - Chrome"
+    log     Chrome Nav
     open browser  ${URL}    ${browser}
     maximize browser window
     sleep  4
