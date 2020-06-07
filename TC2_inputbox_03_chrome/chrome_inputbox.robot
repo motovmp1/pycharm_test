@@ -65,7 +65,7 @@ insertpassworduser
 
 clickbutttonloginpage
     sleep                         1s
-
+    sh
 
 closing_navigator
     close browser
